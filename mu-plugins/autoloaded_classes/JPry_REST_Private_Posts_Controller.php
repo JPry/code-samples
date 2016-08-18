@@ -5,6 +5,8 @@
 
 /**
  * Extend the main WP_REST_Posts_Controller to a private endpoint controller.
+ *
+ * This is used with the Presentations repo: https://github.com/JPry/presentations.git.
  */
 class JPry_REST_Private_Posts_Controller extends WP_REST_Posts_Controller {
 
