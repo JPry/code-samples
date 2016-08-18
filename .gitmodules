@@ -1,3 +1,6 @@
 [submodule "rest-api-link-manager"]
 	path = rest-api-link-manager
 	url = https://github.com/PrysPlugins/rest-api-link-manager.git
+[submodule "plugin-site-new-tab"]
+	path = plugin-site-new-tab
+	url = https://github.com/PrysPlugins/plugin-site-new-tab.git
