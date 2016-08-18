@@ -7,3 +7,6 @@
 [submodule "wpe-allow-heartbeat"]
 	path = wpe-allow-heartbeat
 	url = https://github.com/PrysPlugins/WPE-Allow-Heartbeat.git
+[submodule "cmb2-sample"]
+	path = cmb2-sample
+	url = https://gist.github.com/184506fd72999b82e590.git
