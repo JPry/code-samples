@@ -1,0 +1,58 @@
+# Copyright (C) 2015 JPry
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: JPry Translation Propagation 0.1.0\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/jpry-translation-propagation\n"
+"POT-Creation-Date: 2015-11-19 03:56:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
+
+#: includes/class-jpry-taxonomy-propagation.php:115
+msgid "No language meta"
+msgstr ""
+
+#: includes/class-jpry-taxonomy-propagation.php:128
+msgid "The term to update no longer exists."
+msgstr ""
+
+#: includes/class-jpry-taxonomy-propagation.php:147
+msgid "Failed to send term to site. Data: "
+msgstr ""
+
+#: includes/class-jpry-translation-propagation.php:202
+msgid ""
+"JPry Translation Propagation is missing requirements and has been "
+"<a href=\"%s\">deactivated</a>. Please make sure all requirements are "
+"available."
+msgstr ""
+
+#: includes/class-wds-wiki-propagation.php:214
+msgid "The post appears to no longer exist."
+msgstr ""
+
+#: includes/class-wds-wiki-propagation.php:244
+msgid "Failed to send post to site. Data: "
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "JPry Translation Propagation"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://jeremypry.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Propagate English posts to each Language site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "JPry"
+msgstr ""

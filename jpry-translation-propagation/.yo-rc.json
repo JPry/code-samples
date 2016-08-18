@@ -1,0 +1,16 @@
+{
+  "generator-plugin-wp": {
+    "name": "JPry Translation Propagation",
+    "homepage": "http://jeremypry.com",
+    "description": "Propagate English posts to each Language site.",
+    "version": "0.1.0",
+    "author": "Jeremy Pry",
+    "authorurl": "http://jeremypry.com",
+    "license": "GPLv2",
+    "slug": "jpry-translation-propagation",
+    "classname": "JPry_Translation_Propagation",
+    "classprefix": "JPRYTP_",
+    "prefix": "jpry_translation_propagation",
+    "year": 2015
+  }
+}

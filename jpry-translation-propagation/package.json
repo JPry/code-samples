@@ -1,0 +1,17 @@
+{
+	"name": "jpry-translation-propagation",
+	"title": "JPry Translation Propagation",
+	"version": "0.1.0",
+	"description": "Propagate English posts to each Language site.",
+	"author": {
+		"name": "JPry",
+		"url": "http://jeremypry.com"
+	},
+	"license": "GPLv2",
+	"devDependencies": {
+	    "grunt": "latest",
+	    "grunt-contrib-watch": "latest",
+	    "grunt-wp-i18n": "latest",
+	    "load-grunt-tasks": "latest"
+	}
+}
