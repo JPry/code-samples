@@ -10,3 +10,6 @@
 [submodule "cmb2-sample"]
 	path = cmb2-sample
 	url = https://gist.github.com/184506fd72999b82e590.git
+[submodule "cmb2-front-end-editor"]
+	path = cmb2-front-end-editor
+	url = https://gist.github.com/4b91773fef173eaefb2b.git
