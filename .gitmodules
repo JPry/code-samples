@@ -4,3 +4,6 @@
 [submodule "plugin-site-new-tab"]
 	path = plugin-site-new-tab
 	url = https://github.com/PrysPlugins/plugin-site-new-tab.git
+[submodule "wpe-allow-heartbeat"]
+	path = wpe-allow-heartbeat
+	url = https://github.com/PrysPlugins/WPE-Allow-Heartbeat.git
