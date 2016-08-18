@@ -421,3 +421,6 @@ final class JPry_Post_Metabox {
 
 // Kick it off.
 add_action( 'plugins_loaded', array( JPry_Post_Metabox::get_instance(), 'hooks' ) );
+
+// Include our template tags.
+require_once( __DIR__ . '/includes/template-tags.php' );
