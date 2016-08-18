@@ -1,0 +1,16 @@
+{
+  "generator-plugin-wp": {
+    "name": "JPry Post Metabox",
+    "homepage": "http://jeremypry.com",
+    "description": "Creates custom metaboxes for posts.",
+    "version": "0.1.0",
+    "author": "JPry",
+    "authorurl": "http://jeremypry.com",
+    "license": "GPLv2",
+    "slug": "jpry-post-metabox",
+    "classname": "JPry_Post_Metabox",
+    "classprefix": "JPRYPM_",
+    "prefix": "jpry_post_metabox",
+    "year": 2016
+  }
+}
