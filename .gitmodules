@@ -1,0 +1,3 @@
+[submodule "rest-api-link-manager"]
+	path = rest-api-link-manager
+	url = https://github.com/PrysPlugins/rest-api-link-manager.git
