@@ -1,0 +1,157 @@
+/**
+ * PF Theme
+ * http://wordpress.org/themes
+ * Licensed under the GPLv2+ license.
+ */
+
+// @todo: remove this font import
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+
+@import "variables";
+
+// ===============================================
+// Utilities
+// ===============================================
+@import "utils/sass-mq";
+@import "utils/mixins";
+@import "utils/placeholders";
+
+// ===============================================
+// Global
+// ===============================================
+@import "global/global";
+
+// ===============================================
+// Header
+// ===============================================
+@import "header/header";
+
+// ===============================================
+// Footer
+// ===============================================
+@import "footer/footer";
+
+// ===============================================
+// Global components
+// ===============================================
+
+// Links
+@import "components/breadcrumbs";
+@import "components/button-text";
+@import "components/button-round-icon";
+@import "components/badge-round";
+@import "components/links";
+@import "components/social";
+
+// Titles
+@import "components/title-illustration";
+@import "components/title-text";
+
+// Hero images
+@import "components/hero-homepage";
+@import "components/hero-story";
+@import "components/hero-product";
+@import "components/hero-generic";
+
+// Speedbumps - Full width call to action
+@import "components/cta-newsletter";
+@import "components/cta-newsroom";
+@import "components/cta-product";
+@import "components/cta-store-locator";
+@import "components/cta-store-locator-alt";
+@import "components/cta-connect";
+
+// Decoration background / text
+@import "components/background-text-embed";
+@import "components/background-image-embed";
+
+// Widgets
+@import "components/widget-generic";
+@import "components/widget-where-to-buy";
+@import "components/widget-why-we-bake";
+@import "components/widget-did-you-know";
+@import "components/widget-related-products";
+@import "components/widget-related-recipes";
+@import "components/widget-instagram";
+@import "components/widget-from-our-fans";
+
+// Gigya/Newsletter
+@import "components/gigya-popup";
+
+// ===============================================
+// Homepage components
+// ===============================================
+@import "components-homepage/carousel-new";
+@import "components-homepage/featured-products-grid";
+@import "components-homepage/recipe-collage";
+
+// ===============================================
+// Our story components
+// ===============================================
+@import "components-story/story-collage";
+@import "components-story/margaret";
+@import "components-story/margaret-more";
+@import "components-story/timeline";
+
+// ===============================================
+// Products archive components
+// ===============================================
+@import "components-product-group/product-group-card";
+@import "components-product-group/product-group-highlights";
+@import "components-product-group/product-subgroup";
+
+// ===============================================
+// Single product components
+// ===============================================
+@import "components-product/product-image";
+@import "components-product/product-information";
+@import "components-product/product-nutrition";
+@import "components-product/product-dropdowns";
+@import "components-product/product-buttons";
+@import "components-product/product-buy-modal";
+
+// ===============================================
+// Product finder components
+// ===============================================
+@import "components-product-finder/filters";
+@import "components-product-finder/pagination";
+@import "components-product-finder/grid";
+
+// ===============================================
+// Recipes archive components
+// ===============================================
+@import "components-recipe-group/featured-recipes-grid";
+@import "components-recipe-group/featured-ingredient-cta";
+@import "components-recipe-group/recipe-group-grid";
+
+// ===============================================
+// Single recipe components
+// ===============================================
+@import "components-recipe/info";
+@import "components-recipe/sharing";
+@import "components-recipe/ingredients";
+@import "components-recipe/directions";
+@import "components-recipe/idea";
+
+// ===============================================
+// Misc templates components
+// ===============================================
+@import "components-misc/store-locator-form";
+@import "components-misc/store-locator-map";
+@import "components-misc/contact-block";
+@import "components-misc/contact-form";
+@import "components-misc/coupon";
+@import "components-misc/promotion";
+@import "components-misc/newsroom-sidebar";
+@import "components-misc/newsroom-pagination";
+
+// ===============================================
+// Templates
+// ===============================================
+@import "templates/templates";
+
+// ===============================================
+// Vendors
+// ===============================================
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "vendor/slick-theme";

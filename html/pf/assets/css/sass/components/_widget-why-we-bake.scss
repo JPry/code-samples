@@ -1,0 +1,52 @@
+.page-template-template-products {
+	.widget-why-we-bake {
+		@include mq($until: $bp-widgets) {
+			box-shadow: none;
+			padding: 0;
+			margin: 0;
+			border: 0;
+		}
+		@include mq($bp-tablet, $bp-desktop) {
+			margin-top: 15px;
+			margin-left: 15px;
+			flex-basis: 48%;
+			width: 48%;
+		}
+		.widget-image {
+			@include mq($until: $bp-widgets) {
+				@include aspect-ratio(320, 300, true);
+				.aspect-ratio-content {
+					max-width: 100%;
+				}
+			}
+		}
+		.widget-content {
+			@include mq($until: $bp-widgets) {
+				background-color: $color-widgets-mobile-bg;
+			}
+		}
+
+		.title-illustration {
+			@include mq($until: $bp-widgets) {
+				color: $dark-red;
+				@include font(24px, 28px);
+				.illustration-pan {
+					@include size(70px, 24px);
+					fill: $dark-red;
+				}
+			}
+		}
+		blockquote {
+			@include font(16px, 30px);
+			@include mq($bp-widgets) {
+				@include font(14px, 26px);
+			}
+		}
+		cite {
+			@include font(12px, 36px, $weight: 700, $style: normal);
+			@include mq($bp-widgets) {
+				@include font(14px, 26px);
+			}
+		}
+	}
+}

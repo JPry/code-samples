@@ -1,0 +1,159 @@
+.product-footer-widget.product-featured-recipes {
+	@include mq($bp-tablet) {
+		padding-bottom: 60px;
+	}
+
+	.slick-dots {
+		bottom: -45px;
+	}
+	.slick-track {
+		padding-bottom: 1px;
+	}
+}
+
+.slick-initialized .product-featured-recipe-item.slick-slide,
+.product-featured-recipe-item {
+	@include mq($until: $bp-tablet) {
+		background-color: $color-global-card-bg;
+		margin: 0 10px 1px 10px;
+		padding: 5px;
+		box-shadow: $generic-shadow;
+	}
+	@include mq($bp-tablet) {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+}
+
+.featured-recipe-item-image {
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: 5px solid $color-global-card-bg;
+	box-shadow: 0 0 0 1px $color-global-border;
+	@include aspect-ratio(256, 144, true);
+	@include mq($bp-tablet) {
+		@include aspect-ratio(1, 1, true);
+		flex: 1 1 200px;
+		max-width: 50%;
+		margin-bottom: 0;
+		border: 0;
+		box-shadow: none;
+	}
+	.aspect-ratio-content {
+		min-width: 100%;
+		min-height: 100%;
+	}
+}
+
+.featured-recipe-item-content {
+	text-align: center;
+	@include font(14px, 24px);
+
+	@include mq($bp-tablet) {
+		text-align: left;
+		flex: 1 1 calc(100% - 200px);
+		max-width: calc(100% - 200px);
+
+		padding-left: 30px;
+		min-width: 50%;
+		@include ie {
+			width: calc(100% - 200px);
+		}
+	}
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		word-break: break-word;
+		@include font(24px, 28px);
+		@include tracking(50);
+		@include mq($bp-desktop) {
+			@include font(18px, 28px);
+		}
+	}
+}
+
+
+.featured-recipes-more {
+	display: inline-block;
+
+	background-color: $color-light-btn-bg;
+	color: $color-light-btn-text;
+	border: 5px solid $color-regular-btn-border-inset;
+	box-shadow: inset 0 0 0 1px $color-regular-btn-border, 0 0 0 1px $color-regular-btn-border;
+	margin: 40px auto;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	@include rem('padding', 15px 30px);
+	@include font(11px, 1.2, $font-secondary, $weight: 500);
+	@include tracking(50);
+
+	@include mq($bp-tablet) {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		box-shadow: none;
+		margin: 0;
+		border-top: 1px solid $color-global-border;
+		border-left: 0;
+		border-bottom: 0;
+		border-right: 0;
+		width: 100%;
+		left: 0;
+		color: $color-link;
+		@include rem('padding', 10px);
+		@include font(13px);
+	}
+	@include visual-focus {
+		color: $color-link-hover;
+	}
+}
+
+.featured-recipe-link {
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: $color-link;
+	@include visual-focus {
+		color: $color-link-hover;
+		@include mq($until: $bp-tablet) {
+			box-shadow: inset 0 0 0 1px $color-regular-btn-border;
+			background-color: $color-regular-btn-hover-bg;
+			color: $color-regular-btn-hover-text;
+			border: 4px solid $color-regular-btn-hover-border-inset;
+		}
+	}
+	@include mq($until: $bp-tablet) {
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		width: 80%;
+		margin-bottom: 15px;
+
+		background-color: $color-regular-btn-bg;
+		color: $color-regular-btn-text;
+
+		border: 4px solid $color-regular-btn-border-inset;
+		box-shadow: inset 0 0 0 1px transparent;
+
+		text-align: center;
+		position: relative;
+		transition: all .15s;
+		@include rem('padding', 11px 30px 9px 30px);
+		@include font(10px, 1.2, $font-secondary, $weight: 500);
+		@include tracking(50);
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			width: calc(100% + 10px);
+			height: calc(100% + 10px);
+			border: 1px solid $color-regular-btn-border;
+		}
+	}
+
+}

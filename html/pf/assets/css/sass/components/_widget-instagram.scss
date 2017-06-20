@@ -1,0 +1,68 @@
+.widgets-container .widget.widget-instagram {
+	text-align: center;
+	overflow: hidden;
+	@include mq($bp-widgets) {
+		display: block;
+		padding-bottom: 5%;
+	}
+
+	@include mq($until: $bp-widgets) {
+		background-color: $color-widgets-bg;
+		box-shadow: none;
+		margin: 0;
+		border: 0;
+		padding: 15px 0;
+	}
+
+	.title-illustration {
+		@include mq($until: $bp-widgets) {
+			color: $white;
+		}
+		@include mq($bp-widgets) {
+			@include font(18px, 42px);
+		}
+	}
+
+	> a {
+		display: block;
+		width: 50%;
+		float: left;
+		overflow: hidden;
+		color: $white;
+		@include mq($bp-widgets) {
+			color: $red;
+		}
+		@include aspect-ratio(1, 1, true);
+		@include visual-focus {
+			img {
+				opacity: .15;
+			}
+			span.aspect-ratio-content {
+				opacity: 1;
+			}
+		}
+		img {
+			display: block;
+			height: 100%;
+			width: auto;
+			z-index: 1;
+			backface-visibility: hidden;
+			transition: opacity .2s;
+		}
+		span.aspect-ratio-content {
+			z-index: 2;
+			opacity: 0;
+			transition: opacity .2s;
+			text-transform: uppercase;
+			svg {
+				fill: $white;
+				@include mq($bp-widgets) {
+					fill: $red;
+				}
+				display: inline-block;
+				vertical-align: middle;
+				@include size(22px);
+			}
+		}
+	}
+}

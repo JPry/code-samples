@@ -1,0 +1,137 @@
+.archive.tax-product-categories,
+.page-template-template-product-group {
+	.widget-where-to-buy {
+		align-items: stretch;
+		@include mq($until: $bp-widgets) {
+			box-shadow: none;
+			padding: 0;
+			margin: 0;
+			border: 0;
+
+			display: flex;
+			flex-direction: column;
+		}
+
+		.widget-image {
+			@include mq($until: $bp-widgets) {
+				order: 2;
+				@include aspect-ratio(320, 250, true);
+			}
+		}
+		.widget-content {
+			@include font(14px, 28px, $weight: 300);
+			@include mq($until: $bp-widgets) {
+				background-color: $color-widgets-mobile-alt-bg;
+				color: $color-widgets-mobile-alt-text;
+				order: 1;
+				padding: 20px 40px 40px;
+				@include font(16px, 30px);
+			}
+		}
+
+		.title-illustration {
+			@include mq($until: $bp-widgets) {
+				@include font(24px, 42px);
+				color: $color-widgets-mobile-alt-text;
+				svg {
+					fill: $white;
+				}
+			}
+		}
+
+		.button-regular {
+			margin-top: 30px;
+			@include mq($until: $bp-widgets) {
+				background-color: $color-light-btn-bg;
+				color: $color-light-btn-text;
+				box-shadow: inset 0 0 0 1px $color-regular-btn-border;
+
+				@include visual-focus(hover, focus) {
+					border: 5px solid $color-regular-btn-hover-border-inset;
+					box-shadow: inset 0 0 0 1px $color-regular-btn-border;
+
+					background-color: $color-regular-btn-hover-bg;
+					color: $color-regular-btn-hover-text;
+				}
+			}
+		}
+	}
+}
+
+.single-product,
+.page-template-template-products {
+	.widget-where-to-buy {
+		@include mq($until: $bp-widgets) {
+			margin-bottom: 0;
+		}
+		@include mq($bp-tablet, $bp-desktop) {
+			flex-basis: 48%;
+			width: 48%;
+		}
+		.widget-content {
+			@include mq($until: $bp-widgets) {
+				padding: 0;
+			}
+			@include mq($bp-widgets) {
+				@include font(14px, 26px);
+			}
+		}
+		.widget-image .aspect-ratio-content {
+			@include mq($until: $bp-widgets) {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.button-regular {
+			@include mq($until: $bp-widgets) {
+				margin-top: 50px;
+			}
+		}
+		.title-illustration {
+			@include mq($until: $bp-widgets) {
+				@include font(24px, 42px);
+				.pf-icon {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.page-template-template-coupons-php {
+	.widget-where-to-buy {
+		@include mq($until: $bp-widgets) {
+			margin: 15px 15px 0 15px;
+		}
+		.widget-content {
+			@include font(14px, 26px);
+			@include mq($until: $bp-widgets) {
+				padding: 0;
+			}
+		}
+		.title-illustration {
+			@include mq($until: $bp-widgets) {
+				@include font(24px, 42px);
+				.pf-icon {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.widget.widget-where-to-buy-alt {
+	.widget-content {
+		@include mq($bp-widgets) {
+			flex: 1 0 33.33%;
+			max-width: 33.33%;
+		}
+	}
+	.widget-image {
+		@include mq($bp-widgets) {
+			flex: 1 0 66.66%;
+			max-width: 66.66%;
+			@include aspect-ratio(910, 352, true);
+		}
+	}
+}

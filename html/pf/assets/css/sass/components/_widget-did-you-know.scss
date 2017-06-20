@@ -1,0 +1,123 @@
+.widget-did-you-know {
+	.widget-content p {
+		@include font(18px, 28px, $weight: 300);
+	}
+}
+
+.page-template-template-product-single,
+.single-product,
+.archive.tax-product-categories,
+.page-template-template-product-group {
+	.widget-did-you-know {
+		@include mq($until: $bp-widgets) {
+			box-shadow: none;
+			margin: 0;
+			border: 0;
+		}
+
+		> .title-illustration {
+			display: block;
+			@include mq($bp-widgets) {
+				display: none;
+			}
+		}
+
+		.widget-content {
+			@include mq($until: $bp-widgets) {
+				background-color: $color-widgets-content-bg;
+			}
+
+			.title-illustration {
+				@include mq($until: $bp-widgets) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.page-template-template-product-single,
+.single-product {
+	.widget-did-you-know {
+		@include mq($until: $bp-widgets) {
+			background-color: $color-widgets-bg;
+		}
+
+		> .title-illustration {
+			@include mq($until: $bp-widgets) {
+				color: $white;
+			}
+		}
+		.pf-icon {
+			display: none;
+		}
+	}
+}
+
+.archive.tax-product-categories,
+.page-template-template-product-group {
+	.widget-did-you-know {
+		@include mq($until: $bp-widgets) {
+			background-color: $color-widgets-mobile-bg;
+		}
+
+		.widget-image	{
+			@include mq($until: $bp-widgets) {
+				background: $white;
+				padding: 20px;
+				&:before {
+					display: none;
+				}
+				&:after {
+					content: "";
+					display: block;
+					width: calc(100% - 10px);
+					height: calc(100% - 5px);
+					border: 1px solid $color-global-border;
+					border-bottom: 0;
+					position: absolute;
+					top: 5px;
+					left: 5px;
+				}
+				.aspect-ratio-content {
+					max-width: 80%;
+					height: auto;
+					min-width: 0;
+					margin-left: auto;
+					margin-right: auto;
+					position: relative;
+					top: auto;
+					left: auto;
+					transform: none;
+				}
+			}
+		}
+
+		.widget-content {
+			@include mq($until: $bp-widgets) {
+				position: relative;
+				&:after {
+					content: "";
+					display: block;
+					width: calc(100% - 10px);
+					height: calc(100% - 5px);
+					border: 1px solid $color-global-border;;
+					border-top: 0;
+					position: absolute;
+					top: 0;
+					left: 5px;
+				}
+			}
+		}
+
+		> .title-illustration {
+			@include mq($until: $bp-widgets) {
+				color: $dark-red;
+				@include font(24px, 42px);
+				svg {
+					fill: $dark-red;
+				}
+			}
+		}
+	}
+}

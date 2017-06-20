@@ -1,0 +1,178 @@
+.widgets-section {
+	background-color: $color-widgets-bg;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	@include mq($bp-widgets) {
+		padding: 60px $global-side-desktop-padding;
+	}
+
+	&.-yellow {
+		background-color: $color-widgets-bg-alt;
+	}
+
+	.page-template-template-products & {
+		@include mq($until: $bp-widgets) {
+			padding-top: 0;
+		}
+		.widgets-container {
+			@include mq($bp-tablet, $bp-desktop) {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	.single-product &,
+	.page-template-template-product-single & {
+		max-width: $inner-max-width;
+		margin-left: auto;
+		margin-right: auto;
+		@include mq($bp-desktop) {
+			padding-left: 3.5%;
+			padding-right: 3.5%;
+		}
+	}
+}
+
+.widgets-container {
+	max-width: $inner-max-width;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq($bp-widgets) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&.-single {
+		@include mq($bp-widgets) {
+			display: block;
+		}
+
+		> .widget {
+			@include mq($bp-widgets) {
+				max-width: 100%;
+				margin: 0;
+				@include ie {
+					width: 100%;
+				}
+			}
+			&:first-of-type,
+			&:last-of-type {
+				@include mq($bp-widgets) {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	> .widget {
+		@include mq($bp-widgets) {
+			flex: 1 0 calc(50% - 30px);
+			max-width: calc(50% - 30px);
+			@include ie {
+				width: calc(50% - 30px);
+			}
+		}
+		&:first-of-type {
+			@include mq($bp-widgets) {
+				margin-right: 30px;
+			}
+		}
+		&:last-of-type {
+			@include mq($bp-widgets) {
+				margin-left: 30px;
+			}
+		}
+	}
+	.widget {
+		background-color: $color-widgets-content-bg;
+		padding: 15px;
+		border: 15px solid $color-widgets-content-bg;
+		box-shadow: inset 0 0 0 1px $color-widgets-border;
+		margin: 15px;
+		@include mq($bp-widgets) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0;
+			.page-template-template-products & {
+				align-items: stretch;
+			}
+		}
+		.widget-image {
+			overflow: hidden;
+			@include aspect-ratio(247, 103, true);
+			@include mq($bp-widgets) {
+				flex: 1 0 30.4%;
+				max-width: 30.4%;
+				@include aspect-ratio(209, 279, true);
+			}
+
+			.aspect-ratio-content {
+				display: block;
+				min-width: 100%;
+				@include mq($bp-widgets) {
+					height: 100%;
+					width: auto;
+					min-width: 0;
+				}
+			}
+		}
+		.widget-content {
+			text-align: center;
+			padding: 20px;
+			@include mq($bp-widgets) {
+				flex: 1 0 69.6%;
+				max-width: 69.6%;
+			}
+		}
+	}
+}
+
+.widget-generic {
+	.description {
+		@include font(24px, 30px, $weight: 300);
+	}
+}
+
+// Newsroom widget
+.page-sidebar .widget {
+	border-top: 4px solid $color-widgets-border;
+	margin-bottom: 50px;
+	@include font(12px, 36px, $weight: 400);
+	&.widget_categories {
+		@include mq($until: $bp-desktop) {
+			border-top: 0;
+			margin-top: 40px;
+			.widget-title {
+				padding-top: 20px;
+			}
+		}
+	}
+	&.widget_search form {
+		margin: 50px auto 0 auto;
+		text-align: center;
+	}
+	.widget-title {
+		text-align: center;
+		@include font(14px, 36px, $weight: 600);
+		@include tracking(50);
+		@include mq($bp-desktop) {
+			text-align: left;
+		}
+	}
+	ul {
+		@extend %unstyled-list;
+		text-align: center;
+		@include mq($bp-desktop) {
+			text-align: left;
+			padding-left: 28px;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $dark-gray;
+	}
+}
