@@ -13,3 +13,6 @@
 [submodule "cmb2-front-end-editor"]
 	path = cmb2-front-end-editor
 	url = https://gist.github.com/4b91773fef173eaefb2b.git
+[submodule "woocommerce-order-source-attribution"]
+	path = woocommerce-order-source-attribution
+	url = https://github.com/woocommerce/woocommerce-order-source-attribution
