@@ -16,3 +16,6 @@
 [submodule "woocommerce-order-source-attribution"]
 	path = woocommerce-order-source-attribution
 	url = https://github.com/woocommerce/woocommerce-order-source-attribution
+[submodule "jurassic-ninja-infinite-life"]
+	path = jurassic-ninja-infinite-life
+	url = https://github.com/JPry/jurassic-ninja-infinite-life.git
